@@ -1,0 +1,489 @@
+/*Estilos globales - 1em=16px*/
+
+body {
+	margin: 0em;
+	font-family: 'Lexend', sans-serif;
+}
+/*comienzo nav*/
+
+.block-one__logo {
+	width: 14em;
+    height: 3.5em
+}
+
+.block-one__nav {
+	color: white;
+	background-color: #171819;
+	opacity: 0.7;
+	box-shadow: 0 15px 20px 0 rgb(0 0 0 / 35%);
+	padding-right: 3em;
+	padding-left: 3em;
+}
+
+.block-one__nav:hover {
+	opacity: 1;
+}
+
+.block-one__menu li a:hover {
+	background-color: #4b4b4b;
+	border-radius: 0.2em;
+	transition: 0.6s;
+}
+
+.block-one__sub-menu{
+	background: #222425;
+}
+
+.block-one__sub-menu li a{
+	color: white;
+}
+
+.block-one__sub-menu li a:hover{
+	color: white;
+	transition: 0.6s;
+}
+
+/*Fin nav*/
+
+/*Comienzo carousel*/
+
+.carousel-item {
+	margin-top: 4.5em;
+}
+
+.block-two__carousel-custom h5{
+	font-size: 2.4em;
+	font-weight: bold;
+}
+
+
+.block-two__carousel-link {
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+.block-two__carousel-link:hover {
+	font-weight: bold;
+	color: #130f40;
+	text-decoration: none;
+}
+
+/*Fin carousel*/
+
+/*Comienzo nosotros*/
+.block-three__nosotros {
+	margin-top: 4em;
+}
+
+.block-three__nosotros p {
+	font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+.block-three__nosotros .block-three__title {
+	width: 70%;
+	font-size: 2.4em;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: 1em;
+}
+
+.block-three__subtitle {
+	font-size: 2em;
+	z-index: 2;
+	text-transform: uppercase;
+}
+
+.block-three__subtitle span {
+	color: #ffc107;
+	background-color: white;
+	padding: 0.1em 0em 0.1em 0.1em;
+	z-index: 99;
+	position: relative;
+}
+
+.block-three__subtitle::after {
+	content: "";
+	display: inline-block;
+	height: 0.1em;
+	width: 100%;
+	background:#383838;
+	position: relative;
+	top: -1.5em;
+	z-index: 1;
+}
+
+/*Fin nosotros*/
+
+/*Parallax*/
+
+.block-four__parallax {
+	width: 100%;
+	height: 18em;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/beethoven.jpg");
+	background-position: center;
+	background-size: cover; 
+	background-attachment: fixed;
+
+}
+
+.block-four__parallax p {
+	height: 100%;
+	width: 100%;
+	padding: 0.6em;
+	margin-top: 1em;
+	font-size: 1.4em;
+	font-style: italic;
+	text-shadow: 0.06em 0.37em 0.3em #000;
+
+	/*FLEX*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*Fin Parallax*/
+
+/*comienzo seccion instrumentos*/
+
+.block-five__instru {
+	padding: 3em;    
+}
+
+.block-five__title-instru {
+	margin-top: 4em;
+	font-size: 3.5em;
+	text-shadow: 0.06em 0.37em 0.5em #000;
+	text-transform: uppercase;
+}
+
+.block-five__button-instru {
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+.block-five__button-instru:hover {
+	background: #ffc107;
+}
+
+/*Fin seccion instrumentos*/
+
+/*comienzo seccion marcas*/
+
+.block-five__title-instru-brand {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #ffc107;
+	margin: 1em;
+	text-transform: uppercase;
+
+	/*flex*/
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.block-five__img-brand {
+	width: 20em;
+    height: 10.5em;
+}
+
+/*Fin seccion marcas*/
+
+/*inicio footer*/
+
+.block-six__custom-footer {
+	font-size: 1.1em;
+	text-align: center;
+	padding: 1.2em;
+	background-color: #383838;
+	color: #ffffff;
+	margin: auto;
+
+	/*gradiente*/
+	background-image: linear-gradient(to bottom, #171819 , #2f3640);
+}
+
+.block-six__custom-footer h4{
+	color: #ffc107;
+	text-transform: uppercase;
+	text-shadow: 0.06em 0.37em 0.4em #000;
+}
+
+.block-six__custom-social {
+	list-style-type: none;
+	padding-inline-start: 0em;
+	/*FLEX*/
+	display: flex;
+    justify-content: center;
+}
+
+.block-six__custom-social li a {
+	text-decoration: none;
+	color: white;
+}
+
+.block-six__custom-icon {
+	height: 3em;
+	margin: 0.2em;
+}
+
+.block-six__custom-icon:hover {
+	animation: rotateIn;
+	animation-duration: 0.5s;
+}
+
+/*Fin footer*/
+
+/*Acá empiezan los estilos de intrumentos y saxofones*/
+
+.block-one__margin {
+	margin-top: 7em;
+}
+
+.block-one__instru-section h2{
+	font-size: 2em;
+	font-weight: bold;
+	color: #ffc107;
+	margin: 1em;
+	text-transform: uppercase;
+
+	/*FLEX*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.block-one__instru-section h3 {
+	border-bottom: solid 0.2em #ffc107;
+}
+
+.block-one__title-clarinet {
+	border-bottom: solid 0.1em #ffc107;
+}
+
+.block-one__instrument-custom {
+	width: 100%;
+	max-width: 99.5em;
+	height: auto;
+
+	animation: slideInLeft;
+	animation-duration: 3s;
+}
+
+/*Fin de estilos de intrumentos y saxofones*/
+
+/*Acá empiezan los estilos de accesorios*/
+
+.block-one__accesorios {
+	text-align: center;
+}
+
+
+.block-one__accesorios h2{
+	border-bottom: solid 0.1em #ffc107;
+	font-size: 2em;
+	font-weight: bold;
+	color: #ffc107;
+	margin: 1em;
+	text-transform: uppercase;
+
+}
+
+
+.block-one__accesorios img{
+	width: 31.2em;
+	height: 18.7em;
+	margin: auto;
+	display: block;
+
+	animation: zoomIn;
+	animation-duration: 1s
+}
+
+/*Acá empiezan los estilos de artistas*/
+
+.block-one__section-artists {
+	font-size: 1.1em;
+	
+		/*FLEX*/
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.block-one__section-artists h2 {
+	font-size: 2em;
+	font-weight: bold;
+	color: #ffc107;
+	text-transform: uppercase;
+}
+
+.block-one__section-artists h3{
+	animation: fadeInTopLeft;
+	animation-duration: 1s;
+}
+
+.block-one__title-artists {
+    border-bottom: solid 0.3em #ffc107;
+    margin: 1em;
+    padding: 0em;
+}
+
+.block-one__img-artists {
+	width: 32.2em;
+    height: 21.7em;
+}
+
+/*Fin estilos de artistas*/
+
+/*Acá empiezan los estilos de contacto*/
+.block-one__margin-contact {
+	margin-top: 4em;
+}
+
+.block-one__contact {
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: center;
+	margin: 0.5em;
+}
+
+.block-one__contact-custom {
+	border: solid 0.5em #ffc107;
+	margin: 1em;
+	background: #ffc1092e;
+}
+
+.block-two__form {
+	font-size: 1.1em;
+	text-align: center;
+	margin: 1em;
+	border: solid 0.5em #ffc107;
+	padding: 1em;
+	background: #ffc1092e;
+
+	animation: backInLeft;
+	animation-duration: 1s;
+}
+
+.block-two__form legend {
+	font-weight: bold;
+}
+
+/*Fin estilos de contacto*/
+
+/* Media queries */
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+
+
+@media (max-width: 575.98px){
+	.carousel-item {
+		margin-top: 6.5em;
+	}	
+
+	.block-five__instru {
+		padding: 0.1em;    
+	}
+
+	.block-five__title-instru {
+		margin-top: 3.5em;
+		font-size: 1.3em;
+	}
+
+	.block-five__button-instru {
+		font-size: 1em;
+		padding: 0.2em;
+	}
+
+	.block-one__img-artists {
+		width: 15em;
+	    height: 10em;
+	}
+
+
+	.block-one__accesorios img{
+		width: 17em;
+		height: 12em;
+	}
+
+	.block-one__contact-custom {
+		font-size: 0.6em;
+	}
+
+	.block-two__form{
+		font-size: 0.8em;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+	.block-five__title-instru {
+		margin-top: 1.5em;
+		font-size: 2em;
+	}
+
+	.block-five__button-instru {
+		font-size: 1em;;
+	}
+
+	.block-one__img-artists {
+		width: 19em;
+	    height: 12em;
+	}
+
+	.block-one__accesorios img{
+		width: 20em;
+		height: 12em;
+	}
+
+	.block-one__contact-custom {
+		font-size: 0.6em;
+	}
+
+	.block-two__form{
+		font-size: 0.8em;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+	.block-five__title-instru {
+		margin-top: 2em;
+		font-size: 2em;
+	}
+
+	.blockfive__button-instru {
+		font-size: 1em;
+	}
+
+	.block-one__img-artists {
+		width: 19em;
+	    height: 12em;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+	.block-five__title-instru {
+		margin-top: 4em;
+		font-size: 2em;
+	}
+
+	.block-five__button-instru {
+		font-size: 1em;
+	}
+
+	.block-one__img-artists {
+		width: 19em;
+	    height: 12em;
+	}
+}
+
+/* Fin Media queries */
